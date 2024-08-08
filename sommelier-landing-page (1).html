@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ирина Ширмер - Винные дегустации в Израиле</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Cormorant Garamond', serif;
+            color: #4A0E0E;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url('https://i.postimg.cc/xTnz95tB/CHABLIS.png') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(245, 230, 211, 0.7);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #8B0000;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #8B0000;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(245, 230, 211, 0.8);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #4A0E0E;
+            margin-top: 5px;
+        }
+        .intro {
+            font-size: 1.1em;
+            color: #4A0E0E;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: center;
+            background-color: rgba(245, 230, 211, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .social-link {
+            display: block;
+            padding: 10px 20px;
+            background-color: rgba(120, 20, 20, 0.8);
+            color: #F5E6D3;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+            font-size: 1.1em;
+            text-align: center;
+            cursor: pointer;
+        }
+        .social-link:hover, .social-link:focus {
+            background-color: rgba(90, 10, 10, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .phone {
+            font-size: 1.2em;
+            background-color: rgba(245, 230, 211, 0.7);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        /* Медиа-запросы для адаптивного дизайна */
+        @media screen and (min-width: 768px) {
+            .container {
+                padding: 40px;
+            }
+            header {
+                padding: 30px;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .profile-photo {
+                width: 200px;
+                height: 200px;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            .subtitle {
+                font-size: 1.4em;
+            }
+            .intro {
+                font-size: 1.2em;
+                max-width: 800px;
+                padding: 20px;
+            }
+            .social-links {
+                flex-direction: row;
+                justify-content: center;
+                max-width: 800px;
+            }
+            .social-link {
+                min-width: 150px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .container {
+                padding: 60px;
+            }
+            header {
+                max-width: 1000px;
+            }
+            .intro {
+                max-width: 1000px;
+            }
+            .social-links {
+                max-width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.postimg.cc/hj6DYDh9/2-DSC7690.jpg" alt="Ирина Ширмер" class="profile-photo">
+            <h1>Ирина Ширмер</h1>
+            <p class="subtitle">Профессиональный сомелье</p>
+        </header>
+        <main>
+            <p class="intro">Добро пожаловать в мир изысканных винных дегустаций! Чтобы быть в курсе наших уникальных мероприятий в неожиданных и красивых локациях Израиля, подпишитесь на наши социальные сети:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/winelover_irina" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61557578604373" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://t.me/+IiGVF46lsm5kOTU6" class="social-link" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="https://chat.whatsapp.com/E05wnskG5kMB4l6rXLqciX" class="social-link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+        </main>
+        <footer>
+            <p class="phone">+972 53-423-2640</p>
+        </footer>
+    </div>
+</body>
+</html>
